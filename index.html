@@ -58,43 +58,10 @@
     <img src="zgredek.png" alt="Opis obrazka" id="mainImage">
 
         <!-- Nagłówek -->
-    <h1>O nie! <br>
-        Zgredek zapomniał gdzie schował klucz do kłódki! <br>
-        Na szczęście zapisał sobie kilka wskazówek jak go znaleźć. <br>
-        Pierwszą z nich ukrył w jednym z kociołków. <br>
-        Znajdźcie ją i wpiszcie tutaj: </h1>
+    <h1>O nie! To nie ten obrazek. Próbujcie dalej.<br>
+        </h1>
     
-    <!-- Pole do wprowadzenia hasła -->
-    <input type="password" id="password" placeholder="Wprowadź hasło">
-
-    <!-- Przycisk do zatwierdzenia hasła -->
-    <button onclick="sprawdzHaslo()">Zatwierdź</button>
-
-    <!-- Wiadomość o poprawności hasła -->
-    <div class="message" id="message"></div>
-
-    <!-- Obrazek do wyświetlenia po poprawnym wpisaniu hasła -->
-    <img src="niffler.png" alt="Tajny obrazek" class="hidden" id="secretImage">
-
-    <script>
-        // Funkcja do sprawdzania poprawności hasła
-        function sprawdzHaslo() {
-            var haslo = document.getElementById("password").value;
-            var poprawneHaslo = "horkruks"; // Tutaj wpisz swoje hasło
-            var message = document.getElementById("message");
-            var secretImage = document.getElementById("secretImage");
-
-            if (haslo === poprawneHaslo) {
-                message.textContent = "Brawo! To prawidłowe hasło. Następną wskazówkę ukradł:";
-                message.style.color = "green";
-                secretImage.classList.remove("hidden"); // Wyświetlenie tajnego obrazka
-            } else {
-                message.textContent = "Błędne hasło. Spróbuj ponownie.";
-                message.style.color = "red";
-                secretImage.classList.add("hidden"); // Ukrycie obrazka w przypadku błędnego hasła
-            }
-        }
-    </script>
+   
 
 </body>
 </html>
